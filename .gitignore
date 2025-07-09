@@ -1,0 +1,75 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+.out/ # for Vercel output mode
+
+# Environment files
+.env
+.env.* # Catch other variants like .env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: Lock files (if you're using a team, you might want to keep them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Vite cache
+node_modules/.vite/
+.vite/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Testing
+coverage/
+*.lcov
+
+# MongoDB dumps
+dump/
+
+# Logs from other tools
+*.log.*
+
+# Optional: Next.js / Nuxt / SvelteKit output if relevant
+.next/
+.nuxt/
+.svelte-kit/
+
+# Optional: local database (if using SQLite etc.)
+*.sqlite
+*.sqlite3
+
+# Optional: VSCode workspace settings
+*.code-workspace

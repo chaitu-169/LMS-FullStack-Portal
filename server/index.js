@@ -29,9 +29,7 @@ app.use(morgan('combined'));
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://lms-full-stack-portal.vercel.app/'] 
-    : ['http://localhost:5173'],
+  origin: true,
   credentials: true,
 }));
 

@@ -7,7 +7,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 
 import authRoutes from './routes/auth.js';
-import courseRoutes from './routes/courses.js';
+import courseRoutes from './routes/Courses.js';
 import enrollmentRoutes from './routes/enrollment.js';
 
 // Configure dotenv to look for .env file in the server directory

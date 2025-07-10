@@ -12,13 +12,10 @@ import enrollmentRoutes from './routes/enrollment.js';
 
 // Configure dotenv to look for .env file in the server directory
 dotenv.config({ path: './server/.env',override: true});
-console.log('ENV:', process.env.MONGODB_URI); 
+
 
 // Debug: Log environment variables (remove in production)
-console.log('Environment check:');
-console.log('MONGODB_URI exists:', !!process.env.MONGODB_URI);
-console.log('MONGODB_URI preview:', process.env.MONGODB_URI ? process.env.MONGODB_URI.substring(0, 20) + '...' : 'NOT SET');
-console.log('JWT_SECRET exists:', !!process.env.JWT_SECRET);
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;

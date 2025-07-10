@@ -31,7 +31,7 @@ const InstructorDashboard: React.FC = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get('/api/courses/instructor/my-courses');
+      const response = await axios.get('/courses/instructor/my-courses');
       if (response.data.success) {
         setCourses(response.data.courses);
       }

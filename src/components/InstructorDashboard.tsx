@@ -30,17 +30,20 @@ const InstructorDashboard: React.FC = () => {
   }, []);
 
   const fetchCourses = async () => {
-    try {
-      const response = await axios.get('/courses/instructor/my-courses');
-      if (response.data.success) {
-        setCourses(response.data.courses);
-      }
-    } catch (error) {
-      setError('Failed to fetch courses');
-    } finally {
-      setLoading(false);
+  try {
+    const response = await axios.get('/courses/instructor/my-courses', {
+      withCredentials: true
+    });
+    if (response.data.success) {
+      setCourses(response.data.courses);
     }
-  };
+  } catch (error) {
+    setError('Failed to fetch courses');
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const handleDeleteCourse = async (courseId: string) => {
     if (window.confirm('Are you sure you want to delete this course?')) {
